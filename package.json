@@ -1,45 +1,45 @@
 {
-  "name": "maelstrom-messages",
-  "version": "0.0.1",
-  "description": "Messaging service for Maelström",
-  "main": "app.js",
-  "scripts": {
-    "test": "istanbul cover _mocha",
-    "start": "node app.js",
-    "beautify": "js-beautify --indent-with-tabs --brace-style collapse -r *.js app/*.js config/*.js test/*.js package.json",
-    "coveralls": "cat ./coverage/lcov.info | coveralls"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/demiurgosoft/maelstrom-messages.git"
-  },
-  "keywords": [
-    "maelstrom",
-    "message",
-    "msg",
-    "mmo",
-    "game"
-  ],
-  "author": "@demiurgosoft <demiurgosoft@hotmail.com>",
-  "license": "AGPL-3.0",
-  "bugs": {
-    "url": "https://github.com/demiurgosoft/maelstrom-messages/issues"
-  },
-  "homepage": "https://github.com/demiurgosoft/maelstrom-messages#readme",
-  "dependencies": {
-    "body-parser": "^1.15.1",
-    "express": "^4.13.4",
-    "express-jwt": "^3.4.0",
-    "jsonwebtoken": "^7.0.0",
-    "mongodb": "^2.1.19",
-    "mongoose": "^4.4.17"
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "coveralls": "^2.11.9",
-    "istanbul": "^0.4.3",
-    "js-beautify": "^1.6.2",
-    "mocha": "^2.4.5",
-    "supertest": "^1.2.0"
-  }
+	"name": "maelstrom-messages",
+	"version": "0.0.1",
+	"description": "Messaging service for Maelström",
+	"main": "app.js",
+	"scripts": {
+		"test": "istanbul cover _mocha",
+		"start": "node app.js",
+		"beautify": "js-beautify --indent-with-tabs --brace-style collapse -r *.js app/*.js config/*.js test/*.js package.json",
+		"coveralls": "cat ./coverage/lcov.info | coveralls"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/demiurgosoft/maelstrom-messages.git"
+	},
+	"keywords": [
+		"maelstrom",
+		"message",
+		"msg",
+		"mmo",
+		"game"
+	],
+	"author": "@demiurgosoft <demiurgosoft@hotmail.com>",
+	"license": "AGPL-3.0",
+	"bugs": {
+		"url": "https://github.com/demiurgosoft/maelstrom-messages/issues"
+	},
+	"homepage": "https://github.com/demiurgosoft/maelstrom-messages#readme",
+	"dependencies": {
+		"body-parser": "^1.15.1",
+		"express": "^4.13.4",
+		"express-jwt": "^3.4.0",
+		"jsonwebtoken": "^7.0.0",
+		"mongodb": "^2.1.19",
+		"mongoose": "^4.4.17"
+	},
+	"devDependencies": {
+		"chai": "^3.5.0",
+		"coveralls": "^2.11.9",
+		"istanbul": "^0.4.3",
+		"js-beautify": "^1.6.2",
+		"mocha": "^2.4.5",
+		"supertest": "^1.2.0"
+	}
 }

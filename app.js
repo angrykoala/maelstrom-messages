@@ -3,7 +3,7 @@ var app = express();
 var mongoose = require('mongoose');
 
 
-var config=require('./config/config');
+var config = require('./config/config');
 
 var version = process.env.npm_package_version;
 
@@ -24,7 +24,7 @@ db.once('open', function() {
 	console.log("Database opened");
 	//Starts server once database has opened
 	app.listen(config.port, function() {
-        var dbHandler = require('./app/dbhandler'); //database handler
+		var dbHandler = require('./app/dbhandler'); //database handler
 		console.log("Server listening at on port " + config.port);
 	});
 
