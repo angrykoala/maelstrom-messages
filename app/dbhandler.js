@@ -24,8 +24,11 @@ var dbHandler = {
 		});
 	},
 	getInboxMessage: function(userId, msgId, done) {
-
-
+		User.findById({
+			_id: userId
+		}, function(err, res) {
+			done(err, res.inbox.id(msgId));
+		});
 	},
 };
 
